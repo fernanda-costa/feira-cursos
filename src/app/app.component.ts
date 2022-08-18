@@ -15,9 +15,8 @@ export class AppComponent {
   tweets: Tweet[] = [];
 
   constructor(private httpClient: HttpClient) {
-    this.tweets = tweets;
-    // this.getSavedTweets();
-    // this.getNewTweets();
+    this.getSavedTweets();
+    this.getNewTweets();
   }
 
 
@@ -35,6 +34,6 @@ export class AppComponent {
         this.tweets.push(...newTweets);
         localStorage[LS_KEY] = JSON.stringify(this.tweets);
       });
-    }, 1000);
+    }, 30000);
   }
 }
