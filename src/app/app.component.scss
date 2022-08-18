@@ -1,0 +1,39 @@
+.teste {
+  padding: 10px;
+}
+
+.tweets {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+h1, h2 {
+  text-align-last: center;
+}
+
+h2 { margin-bottom: 20px; margin-top: 5px;}
+h1 { margin-bottom: 10px;}
+
+footer {
+  margin-top: 10px;
+  justify-content: space-around;
+  text-align-last: center;
+  display: flex;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  align-items: center;
+
+  img {
+    margin: 0px 10px;
+  }
+}
+
+header {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 16px;
+}
